@@ -134,6 +134,29 @@
           </div>
         </div>
 
+        <!-- curiculum Item 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="curiculum-item mx-auto" data-toggle="modal" data-target="#curiculumModal5">
+            <div class="curiculum-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="curiculum-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/curiculum/safe.png" alt="">
+          </div>
+        </div>
+
+        <!-- curiculum Item 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="curiculum-item mx-auto" data-toggle="modal" data-target="#curiculumModal6">
+            <div class="curiculum-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="curiculum-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/curiculum/submarine.png" alt="">
+          </div>
+        </div>
 
       </div>
       <!-- /.row -->
