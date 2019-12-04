@@ -1,9 +1,6 @@
 <?php
 // Check for empty fields
-if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['message']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-  http_response_code(500);
-  exit();
-}
+
 
 $name = strip_tags(htmlspecialchars($_POST['name']));
 $email = strip_tags(htmlspecialchars($_POST['email']));
@@ -49,16 +46,25 @@ function mailer($fname, $fmail, $to, $subject, $content, $type=0, $file="", $cc=
                   $mail->addAttachment($f['path'], $f['name']);
             }
       }
-      if ( $mail->send() ) echo "¼º°ø";
-      else echo "½ÇÆĞ";
+      if ( $mail->send() ) echo "ì„±ê³µ";
+      else echo "ì‹¤íŒ¨";
 }
 
 
 
-//mailer("¹ß¼ÛÀÚ¸í","¹ß¼ÛÀÚ ÁÖ¼Ò","¼ö½ÅÀÚ ÁÖ¼Ò","Á¦¸ñ","³»¿ë" );
+//mailer("ë°œì†¡ìëª…","ë°œì†¡ì ì£¼ì†Œ","ìˆ˜ì‹ ì ì£¼ì†Œ","ì œëª©","ë‚´ìš©" );
 mailer($to,$to,$to,$subject,$body );
 
 //add end
+
+
+
+//if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['phone']) || empty($_POST['message']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+//  http_response_code(500);
+//  exit();
+//}
+
+
 //if(!mail($to, $subject, $body, $header))
 //  http_response_code(500);
 
