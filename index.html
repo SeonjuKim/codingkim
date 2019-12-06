@@ -23,26 +23,44 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">  	 
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">코딩김선생</a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">코딩김선생 소개</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#curiculum">커리큘럼</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">상담신청</a>
-          </li>
-        </ul>
-      </div>
+<!--add-->
+     <div class="col-md-6 col-lg-4"></div>
+	 <div class="collapse navbar-collapse" id="navbarResponsive">
+	 <div class="dropdown">
+		<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" id="btn_intro">코딩김선생
+		<span class="caret"></span></button>
+		<ul class="dropdown-menu" id="introcodingkim">
+			<li><a href="#about">코딩김선생소개</a></li>
+			<li><a href="#ceo">대표소개</a></li>
+		</ul>
+	 </div>
+	 <div class="dropdown">
+		<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" id="btn_dd_curiculum">커리큘럼
+		<span class="caret"></span></button>
+		<ul class="dropdown-menu" id="ddcuriculum">
+			<li><a href="#entry">엔트리</a></li>
+			<li><a href="#scratch">스크래치</a></li>
+			<li><a href="#python">파이썬</a></li>
+			<li><a href="#microbit">마이크로비트</a></li>
+		</ul>	
+	 </div>
+	 <div class="dropdown">
+		<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" id="btn_dd_curiculum">고객센터
+		<span class="caret"></span></button>
+		<ul class="dropdown-menu" id="ddcuriculum">
+			<li><a href="#contact">상담신청</a></li>
+			<li><a href="#service">고객센터</a></li>
+		</ul>	
+	 </div>
+	 <!--add-->
+	</div> 
     </div>
   </nav>
 
@@ -141,6 +159,115 @@
     </div>
   </section>
 
+ <!--entry Section -->
+  <section class="page-section curiculum" id="entry">
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- curiculum Modal - Title -->
+                <h2 class="curiculum-modal-title text-secondary text-uppercase mb-0">entry</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- curiculum Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/curiculum/entry.png" alt="">
+                <!-- curiculum Modal - Text -->
+                <p class="mb-5">엔트리(ENTRY)는 대한민국의 교육용 프로그래밍 언어 플랫폼이다. 블록형 언어를 기반으로 하고 있으며 크게 학습하기, 만들기, 공유하기로 구성되어 있다. 엔트리는 미래부 SW창의캠프, 한국과학창의재단 'SW방과후 학교' 시범사업과, SW선도학교 등 학교 현장에서 주로 쓰이고 있으며 네이버의 '소프트웨어야 놀자' 에서도 활용되고 있다.</p>                
+              </div>
+            </div>
+          </div>
+        </div>
+ </section>
+ <!-- scratch Section -->
+ <section class="page-section curiculum" id="scratch">
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- curiculum Modal - Title -->
+                <h2 class="curiculum-modal-title text-secondary text-uppercase mb-0">scratch</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- curiculum Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/curiculum/scratch.png" alt="">
+                <!-- curiculum Modal - Text -->
+                <p class="mb-5">컴퓨터 프로그래밍 도구. 미국 매사추세츠공과대학(MIT) 미디어랩(Media Lab)의 라이프롱킨더가든그룹(LKG)이 만들어 무료로 제공했다.
+
+여덟 살에서 열여섯 살 사이 어린이가 쉽게 쓸 수 있게 설계했다. 저자와 독자가 양방향으로 소통하는 동화, 게임, 애니메이션 따위를 만들 때 쓸모가 있다. 이용자가 창의적으로 생각하고, 체계적으로 판단하며, 협업하는 방법을 배울 수 있게 한 게 개발팀의 목표였다.
+[네이버 지식백과] 스크래치 [Scratch] (최신 ICT 시사상식, 2013.12.31)</p>                
+              </div>
+            </div>
+          </div>
+        </div>
+
+ </section>
+ <!-- microbit Section -->
+ <section class="page-section curiculum" id="microbit">
+         <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- curiculum Modal - Title -->
+                <h2 class="curiculum-modal-title text-secondary text-uppercase mb-0">microbit</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- curiculum Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/curiculum/microbit.png" alt="">
+                <!-- curiculum Modal - Text -->
+                <p class="mb-5">영국 방송 공사(BBC)에서 쉽고 재미있는 컴퓨터 교육을 위해 만든 암(ARM) 기반의 소형 싱글 보드 컴퓨터.
+‘micro:bit’를 상표명으로 사용한다. 개별 프로그래밍이 가능한 LED와 버튼, 센서, 유에스비(USB), 무선 통신 등으로 구성되어 간단한 게임부터 로봇, 전자 악기까지 다양한 기기를 만들 수 있다.
+[네이버 지식백과] 마이크로비트 [micro:bit] (IT용어사전, 한국정보통신기술협회)</p>                
+              </div>
+            </div>
+          </div>
+        </div>
+ </section>
+<!-- python section -->
+ <section class="page-section curiculum" id="python">
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- curiculum Modal - Title -->
+                <h2 class="curiculum-modal-title text-secondary text-uppercase mb-0">python</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- curiculum Modal - Image -->
+                <img class="img-fluid rounded mb-5" src="img/curiculum/python.png" alt="">
+                <!-- curiculum Modal - Text -->
+                <p class="mb-5">최근 몇 년 사이 프로그래밍을 비전공자들에게 알려주는 문화가 전 세계적으로 확산되고 있다. 하버드나 예일대 같은 해외 대학 뿐만 아니라 카이스트, 국민대, 성균관대 등 국내 대학에서도 프로그래밍 교양 수업이 늘어나는 추세다. 이러한 문화 속에서 함께 주목받는 언어가 있다. ‘파이썬’이다. 간결한 문법으로 입문자가 이해하기 쉽고, 다양한 분야에 활용할 수 있기 때문이다. 이 외에도 파이썬은 머신러닝, 그래픽, 웹 개발 등 여러 업계에서 선호하는 언어로 꾸준히 성장하고 있다.
+[네이버 지식백과] 파이썬 [Python] - 간결하고 생산성 높은 프로그래밍 언어 (용어로 보는 IT, 이지현)</p>                
+              </div>
+            </div>
+          </div>
+        </div>
+
+ </section>
+
   <!-- About Section -->
   <section class="page-section bg-secondary text-white mb-0" id="about">
     <div class="container">
@@ -174,7 +301,7 @@
 
 
    <!-- 대표 Section -->
-  <section class="page-section bg-primary text-white mb-0" id="codingkim">
+  <section class="page-section bg-primary text-white mb-0" id="ceo">
     <div class="container">
  
   <!-- About Section Heading -->
@@ -361,7 +488,7 @@
                 <!-- curiculum Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/curiculum/entry.png" alt="">
                 <!-- curiculum Modal - Text -->
-                <p class="mb-5">엔트리는 국내에서 개발된 교육용 블록코딩언어이며 교과서에도 실려있어 학생들에게 유용한 개발언어입니다.</p>
+                <p class="mb-5">엔트리(ENTRY)는 대한민국의 교육용 프로그래밍 언어 플랫폼이다. 블록형 언어를 기반으로 하고 있으며 크게 학습하기, 만들기, 공유하기로 구성되어 있다. 엔트리는 미래부 SW창의캠프, 한국과학창의재단 'SW방과후 학교' 시범사업과, SW선도학교 등 학교 현장에서 주로 쓰이고 있으며 네이버의 '소프트웨어야 놀자' 에서도 활용되고 있다.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -400,7 +527,9 @@
                 <!-- curiculum Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/curiculum/scratch.png" alt="">
                 <!-- curiculum Modal - Text -->
-                <p class="mb-5">스크래치는 블록코딩언어로 코딩의 기본개념을 배우기에 아주 좋습니다. 피지컬컴퓨팅으로 불리는 각종 교구가 많이 개발되어 있습니다.</p>
+                <p class="mb-5">컴퓨터 프로그래밍 도구. 미국 매사추세츠공과대학(MIT) 미디어랩(Media Lab)의 라이프롱킨더가든그룹(LKG)이 만들어 무료로 제공했다.
+여덟 살에서 열여섯 살 사이 어린이가 쉽게 쓸 수 있게 설계했다. 저자와 독자가 양방향으로 소통하는 동화, 게임, 애니메이션 따위를 만들 때 쓸모가 있다. 이용자가 창의적으로 생각하고, 체계적으로 판단하며, 협업하는 방법을 배울 수 있게 한 게 개발팀의 목표였다.
+[네이버 지식백과] 스크래치 [Scratch] (최신 ICT 시사상식, 2013.12.31)</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -439,7 +568,8 @@
                 <!-- curiculum Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/curiculum/python.png" alt="">
                 <!-- curiculum Modal - Text -->
-                <p class="mb-5">파이썬은 쉬운 문법으로 블록코딩에서 텍스트코딩으로 넘어가는 학습자가 배우기에 적합한 프로그래밍언어이며 인공지능에서도 많이 쓰입니다.</p>
+                <p class="mb-5">최근 몇 년 사이 프로그래밍을 비전공자들에게 알려주는 문화가 전 세계적으로 확산되고 있다. 하버드나 예일대 같은 해외 대학 뿐만 아니라 카이스트, 국민대, 성균관대 등 국내 대학에서도 프로그래밍 교양 수업이 늘어나는 추세다. 이러한 문화 속에서 함께 주목받는 언어가 있다. ‘파이썬’이다. 간결한 문법으로 입문자가 이해하기 쉽고, 다양한 분야에 활용할 수 있기 때문이다. 이 외에도 파이썬은 머신러닝, 그래픽, 웹 개발 등 여러 업계에서 선호하는 언어로 꾸준히 성장하고 있다.
+[네이버 지식백과] 파이썬 [Python] - 간결하고 생산성 높은 프로그래밍 언어 (용어로 보는 IT, 이지현)</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -478,7 +608,9 @@
                 <!-- curiculum Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/curiculum/microbit.png" alt="">
                 <!-- curiculum Modal - Text -->
-                <p class="mb-5">마이크로비트는 영국 BBC에서 제작한 교육용보드로 LED,가속도센서,라디오송수신 기능 등 내장되어 있는 기능이 많습니다.</p>
+                <p class="mb-5">영국 방송 공사(BBC)에서 쉽고 재미있는 컴퓨터 교육을 위해 만든 암(ARM) 기반의 소형 싱글 보드 컴퓨터.
+‘micro:bit’를 상표명으로 사용한다. 개별 프로그래밍이 가능한 LED와 버튼, 센서, 유에스비(USB), 무선 통신 등으로 구성되어 간단한 게임부터 로봇, 전자 악기까지 다양한 기기를 만들 수 있다.
+[네이버 지식백과] 마이크로비트 [micro:bit] (IT용어사전, 한국정보통신기술협회)</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
